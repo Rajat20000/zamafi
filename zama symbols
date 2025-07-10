@@ -1,0 +1,13 @@
+Symbolic execution
+The idea behind symbolic execution is that whenever a contract calls the Zama FHEVM Solidity library on the host chain (the L1/L2 where the confidential dapp is deployed) to perform an FHE operation, the host chain itself doesn’t do any actual FHE computation; instead, it produces a pointer to the result and emits an event to notify a network of coprocessors, who do the actual FHE computation. This has many advantages:
+
+The host chain does not need to change anything, run expensive FHE operations or use specific hardware.
+
+The host chain is not slowed down by FHE, so non-FHE transactions can be executed as fast as they always have been
+
+FHE operations can be executed in parallel, rather than sequentially, dramatically increasing throughput.
+
+Since all ciphertexts on the host chain are simply pointers (the actual data is stored by coprocessors), FHE operations can be chained just like regular operations, without needing to wait for the previous ones to complete. The only time we need to wait for a ciphertext to be computed is when it has to be decrypted.
+
+From a security perspective, everything the coprocessors do is publicly verifiable, and anyone can just recompute the ciphertexts to verify the result. Initially, we use multiple coprocessors with a majority consensus, but longer term the goal is to enable anyone to compete to execute FHE operations, leveraging ZK-FHE to prove the correctness.
+
