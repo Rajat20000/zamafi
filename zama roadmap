@@ -1,0 +1,11 @@
+Roadmap
+The Zama Protocol leverages years of research and development work done at Zama. The testnet is already live, and the mainnet is planned for 2025, with a TGE at the end of the year. The timeline is as follows:
+
+Public Testnet (already live). This will allow anyone to deploy and test their confidential dapps, as well as enabling operators to coordinate and get used to the operations.
+
+Ethereum Mainnet (Q4 2025). This will be the first official mainnet bringing confidentiality to Ethereum. Only apps that have been approved by Zama will be available at first.
+
+TGE + other EVM chains (End of Year). Towards the end of the year, we will launch the $ZAMA token and add more EVM chains to the Zama protocol. Anyone will be able to deploy dapps, permissionlessly.
+
+Solana support (2026). After an initial phase of EVM-only support, we will deploy the Zama Protocol on Solana, enabling confidential SVM applications.
+
