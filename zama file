@@ -1,0 +1,10 @@
+The Zama Confidential Blockchain Protocol (or simply the Zama Protocol) enables confidential smart contracts on top of any L1 or L2. It is the most advanced confidentiality protocol to date, offering:
+
+End-to-end encryption of transaction inputs and state: no-one can see the data, not even node operators.
+
+Composability between confidential contracts, as well as with non-confidential ones. Developers can build on top of other contracts, tokens and dapps.
+
+Programmable confidentiality: smart contracts define who can decrypt what, meaning developers have full control over confidentiality rules in their applications.
+
+The Zama Protocol is not a new L1 or L2, but rather a cross-chain confidentiality layer sitting on top of existing chains. As such, users don’t need to bridge to a new chain and can interact with confidential dapps from wherever they choose.
+
